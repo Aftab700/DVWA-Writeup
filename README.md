@@ -3,18 +3,18 @@
 
 
 - [Brute Force](#brute-force)
-- [Command Injection]()
-- [Cross Site Request Forgery (CSRF)]()
-- [File Inclusion]()
-- [File Upload]()
-- [SQL Injection]()
-- [SQL Injection (Blind)]()
-- [Weak Session IDs]()
-- [DOM Based Cross Site Scripting (XSS)]()
-- [Reflected Cross Site Scripting (XSS)]()
-- [Stored Cross Site Scripting (XSS)]()
-- [Content Security Policy (CSP) Bypass]()
-- [JavaScript Attacks]()
+- [Command Injection](#command-injection)
+- [Cross Site Request Forgery (CSRF)](#cross-site-request-forgery-csrf)
+- [File Inclusion](#file-inclusion)
+- [File Upload](#file-upload)
+- [SQL Injection](#sql-injection)
+- [SQL Injection (Blind)](#sql-injection-blind)
+- [Weak Session IDs](#weak-session-ids)
+- [DOM Based Cross Site Scripting (XSS)](#dom-based-cross-site-scripting-xss)
+- [Reflected Cross Site Scripting (XSS)](#reflected-cross-site-scripting-xss)
+- [Stored Cross Site Scripting (XSS)](#stored-cross-site-scripting-xss)
+- [Content Security Policy (CSP) Bypass](#content-security-policy-csp-bypass)
+- [JavaScript Attacks](#javascript-attacks)
 
 
 ### Brute Force
