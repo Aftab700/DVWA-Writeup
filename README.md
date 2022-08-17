@@ -59,10 +59,13 @@ Here we are using cookies because if we are not authenticated when we make the l
 {::options parse_block_html="true" /}
 
 <details><summary markdown="span">Let's see some code!</summary>
+  
 ```python
 print('Hello World!')
 ```
+  
 Of course, it has to be Hello World, right?
+  
 </details>
 <br/>
 
@@ -74,11 +77,9 @@ Of course, it has to be Hello World, right?
 
 
 
-{{ ::options parse_block_html="true" }}
+{::options parse_block_html="true" /}
 
 <details><summary>Click to see output </summary>
-<p>
-  
 ```ShellSession
   
 ┌─[aftab@parrot]─[~/Downloads/dvwa]
@@ -94,11 +95,10 @@ Hydra (https://github.com/vanhauser-thc/thc-hydra) starting at 2022-08-17 23:50:
 Hydra (https://github.com/vanhauser-thc/thc-hydra) finished at 2022-08-17 23:51:59
 
 ```
-
-</p>
 </details>
+<br/>
 
-{{ ::options parse_block_html="false" }}
+{::options parse_block_html="false" /}
 
 Login credentials found by hydra:
 `admin:password`
