@@ -53,7 +53,10 @@ Here we are using cookies because if we are not authenticated when we make the l
 
 
 
-<details><summary>Click to see output</summary>
+<details><summary>Click to see output 
+
+</summary>
+<p>
 
 ```ShellSession
   
@@ -70,7 +73,7 @@ Hydra (https://github.com/vanhauser-thc/thc-hydra) starting at 2022-08-17 23:50:
 Hydra (https://github.com/vanhauser-thc/thc-hydra) finished at 2022-08-17 23:51:59
 
 ```
-
+</p>
 </details>
 
 Login credentials found by hydra:
