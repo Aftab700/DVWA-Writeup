@@ -96,7 +96,7 @@ Hydra (https://github.com/vanhauser-thc/thc-hydra) finished at 2022-08-17 23:51:
 
 ```
 </details>
-<br/>
+
 
 {::options parse_block_html="false" /}
 
