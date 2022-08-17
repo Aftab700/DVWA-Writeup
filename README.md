@@ -79,7 +79,8 @@ Of course, it has to be Hello World, right?
 
 {::options parse_block_html="true" /}
 
-<details><summary>Click to see output </summary>
+<details><summary markdown="span">Click to see output </summary>
+  
 ```ShellSession
   
 ┌─[aftab@parrot]─[~/Downloads/dvwa]
@@ -95,6 +96,7 @@ Hydra (https://github.com/vanhauser-thc/thc-hydra) starting at 2022-08-17 23:50:
 Hydra (https://github.com/vanhauser-thc/thc-hydra) finished at 2022-08-17 23:51:59
 
 ```
+  
 </details>
 
 
