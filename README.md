@@ -56,6 +56,8 @@ Here we are using cookies because if we are not authenticated when we make the l
 <details><summary>Click to see output </summary>
 <p>
 
+{::options parse_block_html="true" /}
+  
 ```ShellSession
   
 ┌─[aftab@parrot]─[~/Downloads/dvwa]
@@ -71,6 +73,9 @@ Hydra (https://github.com/vanhauser-thc/thc-hydra) starting at 2022-08-17 23:50:
 Hydra (https://github.com/vanhauser-thc/thc-hydra) finished at 2022-08-17 23:51:59
 
 ```
+
+{::options parse_block_html="false" /}
+ 
 </p>
 </details>
 
