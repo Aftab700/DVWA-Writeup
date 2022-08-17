@@ -52,6 +52,28 @@ hydra -l admin -P /usr/share/wordlists/rockyou.txt 127.0.0.1 http-get-form "/vul
 Here we are using cookies because if we are not authenticated when we make the login attempts, we will be redirected to default login page
 
 
+
+
+
+
+{::options parse_block_html="true" /}
+
+<details><summary markdown="span">Let's see some code!</summary>
+```python
+print('Hello World!')
+```
+Of course, it has to be Hello World, right?
+</details>
+<br/>
+
+{::options parse_block_html="false" /}
+
+
+
+
+
+
+
 {{ ::options parse_block_html="true" }}
 
 <details><summary>Click to see output </summary>
