@@ -52,11 +52,10 @@ hydra -l admin -P /usr/share/wordlists/rockyou.txt 127.0.0.1 http-get-form "/vul
 Here we are using cookies because if we are not authenticated when we make the login attempts, we will be redirected to default login page
 
 
+{::options parse_block_html="true" /}
 
 <details><summary>Click to see output </summary>
 <p>
-
-{::options parse_block_html="true" /}
   
 ```ShellSession
   
@@ -74,10 +73,10 @@ Hydra (https://github.com/vanhauser-thc/thc-hydra) finished at 2022-08-17 23:51:
 
 ```
 
-{::options parse_block_html="false" /}
- 
 </p>
 </details>
+
+{::options parse_block_html="false" /}
 
 Login credentials found by hydra:
 `admin:password`
