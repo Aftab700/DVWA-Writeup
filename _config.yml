@@ -1,5 +1,6 @@
 theme: jekyll-theme-cayman
-
+plugins:
+  - jemoji
 title: "DVWA Writeups"
 description: "This repository contains writeups for Damn Vulnerable Web Application (DVWA)."
 google_analytics: "G-XVWHEPX27F"
