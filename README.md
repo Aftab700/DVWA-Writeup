@@ -53,9 +53,7 @@ Here we are using cookies because if we are not authenticated when we make the l
 
 
 
-<details><summary>Click to see output 
-
-</summary>
+<details><summary>Click to see output </summary>
 <p>
 
 ```ShellSession
