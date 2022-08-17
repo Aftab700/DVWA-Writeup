@@ -1,6 +1,6 @@
-## Welcome to GitHub Pages
+# DVWA Writeup
 
-You can use the [editor on GitHub](https://github.com/Aftab700/DVWA-Writeup/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+Damn Vulnerable Web App (DVWA).
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
