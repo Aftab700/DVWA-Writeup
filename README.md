@@ -51,7 +51,7 @@ hydra -l admin -P /usr/share/wordlists/rockyou.txt 127.0.0.1 http-get-form "/vul
 
 Here we are using cookies because if we are not authenticated when we make the login attempts, we will be redirected to default login page
 
-{::options parse_block_html="true" /}
+
 
 <details><summary>Click to see output</summary>
 
