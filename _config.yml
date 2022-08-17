@@ -4,3 +4,6 @@ title: "DVWA Writeups"
 description: "This repository contains writeups for Damn Vulnerable Web Application (DVWA)."
 google_analytics: "G-XVWHEPX27F"
 markdown: CommonMarkGhPages
+commonmark:
+  options: ["SMART", "FOOTNOTES"]
+  extensions: ["strikethrough", "autolink", "table", "tagfilter"]
