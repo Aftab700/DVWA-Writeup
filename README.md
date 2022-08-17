@@ -27,6 +27,9 @@
 - [Content Security Policy (CSP) Bypass](#content-security-policy-csp-bypass)
 
 - [JavaScript Attacks](#javascript-attacks)
+</br>
+
+---
 
 
 ### Brute Force
