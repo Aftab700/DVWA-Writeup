@@ -579,6 +579,10 @@ make changes and hit send button,visit the url and you have reverse shell.
 **Security level is currently: high.**
 
 
+Changing Content-Type is not working maybe server is verifying the file header signature.
+
+
+
 
 ---
 
