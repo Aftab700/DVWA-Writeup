@@ -77,6 +77,12 @@ Hydra (https://github.com/vanhauser-thc/thc-hydra) finished at 2022-08-17 23:51:
 Login credentials found by hydra:
 `admin:password`
 
+<br/>
+
+**Security level is currently: medium.**
+
+
+
 ---
 
 ### Command Injection
