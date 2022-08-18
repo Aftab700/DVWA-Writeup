@@ -252,6 +252,32 @@ Serving HTTP on :: port 80 (http://[::]:80/) ...
 
 
 
+**Security level is currently: medium.**
+
+Same attack won't work, looking at sourcecode we know that server checks where the request came from.
+
+<img width="333" alt="image" src="https://user-images.githubusercontent.com/79740895/185403021-db671fc3-c08d-47e2-8a8f-fdb639e50e90.png">
+
+one way to get around is if we can upload our file in server.
+
+Now first of all change csrf.html into csrf.php file, then set low security level and switch into file uploading vulnerability inside DVWA.
+
+Here the above text file of html form is now saved as csrf.php is successfully uploaded in the server which you can see from given screenshot.
+
+<img width="468" alt="image" src="https://user-images.githubusercontent.com/79740895/185402657-d1e47dc3-2884-4619-a5a6-5dafbe459a68.png">
+
+now we can use this new url: `http://192.168.170.131/hackable/uploads/csrf.php`
+
+password changed.
+
+
+
+**Security level is currently: high.**
+
+
+
+
+
 ---
 
 ### File Inclusion
