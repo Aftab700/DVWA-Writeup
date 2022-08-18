@@ -596,6 +596,15 @@ and we have reverse shell on our netcat listener.
 ### SQL Injection
 
 
+**Security level is currently: low.**
+
+We can detect SQL injection with `'` on submiting this we get SQL error.
+
+we can see all entries with `' or 1=1#` :
+
+<img width="248" alt="image" src="https://user-images.githubusercontent.com/79740895/185461785-b0426c0a-db1c-4118-b654-fe62a8b607c9.png">
+
+
 
 
 ---
