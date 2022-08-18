@@ -192,7 +192,7 @@ output:
 
 This is about command injection so backend must be appending our input ping command.
 
-we can give our arbitrary command to execute with the help of pipe ` | ` ,so let's create a simple payload :
+we can give our arbitrary command to execute with the help of pipe `|` ,so let's create a simple payload :
 ```
 |ls
 ```
