@@ -560,6 +560,26 @@ Linux
 
 </details>
 
+
+
+**Security level is currently: medium.**
+
+This time it is blocking php file we can bypass that by changing:
+
+`Content-Type: application/x-php`  ==>   `Content-Type: image/png`
+
+we can also do that from browser go to inspect element ,Network tab resubmit the request so it show up on network tab select that upload request right click and Edit and Resend:
+
+<img width="407" alt="image" src="https://user-images.githubusercontent.com/79740895/185420346-ab0c9387-7cc6-4402-9376-b3611f35df46.png">
+
+make changes and hit send button,visit the url and you have reverse shell.
+
+
+
+**Security level is currently: high.**
+
+
+
 ---
 
 ### SQL Injection
