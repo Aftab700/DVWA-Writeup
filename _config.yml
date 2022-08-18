@@ -1,7 +1,6 @@
 theme: jekyll-theme-cayman
 plugins:
   - jemoji
-gems:
   - jekyll-feed
   - jekyll-seo-tag
 markdown: kramdown
