@@ -183,36 +183,47 @@ LoggedIn: username: admin , password:password   ===found===
 
 
 ---
+
 ### Cross Site Request Forgery (CSRF)
 
 ---
+
 ### File Inclusion
 
 ---
+
 ### File Upload
 
 ---
+
 ### SQL Injection
 
 ---
+
 ### SQL Injection (Blind)
 
 ---
+
 ### Weak Session IDs
 
 ---
+
 ### DOM Based Cross Site Scripting (XSS)
 
 ---
+
 ### Reflected Cross Site Scripting (XSS)
 
 ---
+
 ### Stored Cross Site Scripting (XSS)
 
 ---
+
 ### Content Security Policy (CSP) Bypass
 
 ---
+
 ### JavaScript Attacks
 
 
