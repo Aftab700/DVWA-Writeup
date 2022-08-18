@@ -234,7 +234,7 @@ Here we can change password, there is no csrf protection. We can create simple f
   
 </details>
 
-we can host this page so when victim visit page their password will automatically charged.
+we can host this page so when victim visit page their password will automatically change.
 
 I'm using python to host webpage:
 
