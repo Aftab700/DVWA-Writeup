@@ -327,7 +327,7 @@ url:`http://192.168.170.131/vulnerabilities/fi/?page=/etc/passwd`
 <img width="658" alt="image" src="https://user-images.githubusercontent.com/79740895/185410392-bf62fdae-c6c7-4f90-a934-191ffadcf471.png">
 
 
-**Security level is currently: medium.**
+_Also work for medium_
 
 
 
