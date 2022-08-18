@@ -581,12 +581,22 @@ make changes and hit send button,visit the url and you have reverse shell.
 
 Changing Content-Type is not working maybe server is verifying the file header signature.
 
+add `GIF98;` at the start of our exploit file and rename it with `rev.php.jpg`.
 
+but whene we visit it directly it is not working so we use file inclusion:
 
+url: `http://192.168.170.131/vulnerabilities/fi/?page=file/../../../hackable/uploads/rev.php.jpg`     <- security high
+
+and we have reverse shell on our netcat listener.
+
+<br/>
 
 ---
 
 ### SQL Injection
+
+
+
 
 ---
 
