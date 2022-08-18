@@ -111,6 +111,13 @@ Hydra (https://github.com/vanhauser-thc/thc-hydra) finished at 2022-08-18 09:18:
   
 </details>
 
+<br/>
+
+**Security level is currently: high.**
+
+
+
+
 ---
 
 ### Command Injection
