@@ -180,6 +180,14 @@ LoggedIn: username: admin , password:password   ===found===
 
 ### Command Injection
 
+<img width="467" alt="image" src="https://user-images.githubusercontent.com/79740895/185295923-7a149c9d-8f1e-4262-ae0a-3884514462ac.png">
+
+we are given with functionality to ping device. we give ip or domain to ping:
+
+input: localhost
+
+output:
+
 
 
 ---
