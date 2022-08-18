@@ -635,6 +635,8 @@ Payload: `' UNION SELECT user, password FROM users#`
 
 
 **Security level is currently: low.**
+**Security level is currently: medium.**
+**Security level is currently: high.**
 
 
 
@@ -643,25 +645,63 @@ Payload: `' UNION SELECT user, password FROM users#`
 
 ### Weak Session IDs
 
+
+**Security level is currently: low.**
+**Security level is currently: medium.**
+**Security level is currently: high.**
+
+
 ---
 
 ### DOM Based Cross Site Scripting (XSS)
+
+
+**Security level is currently: low.**
+**Security level is currently: medium.**
+**Security level is currently: high.**
+
 
 ---
 
 ### Reflected Cross Site Scripting (XSS)
 
+
+**Security level is currently: low.**
+**Security level is currently: medium.**
+**Security level is currently: high.**
+
+
 ---
 
 ### Stored Cross Site Scripting (XSS)
+
+
+**Security level is currently: low.**
+**Security level is currently: medium.**
+**Security level is currently: high.**
+
 
 ---
 
 ### Content Security Policy (CSP) Bypass
 
+
+
+**Security level is currently: low.**
+**Security level is currently: medium.**
+**Security level is currently: high.**
+
+
+
 ---
 
 ### JavaScript Attacks
+
+
+**Security level is currently: low.**
+**Security level is currently: medium.**
+**Security level is currently: high.**
+
 
 
 ---
