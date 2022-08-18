@@ -1,6 +1,12 @@
 theme: jekyll-theme-cayman
 plugins:
   - jemoji
+gems:
+  - jekyll-feed
+  - jekyll-seo-tag
+markdown: kramdown
+kramdown:
+  parse_block_html: true
 title: "DVWA Writeups"
 description: "This repository contains writeups for Damn Vulnerable Web Application (DVWA)."
 google_analytics: "G-XVWHEPX27F"
