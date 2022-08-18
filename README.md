@@ -633,6 +633,12 @@ Payload: `' UNION SELECT user, password FROM users#`
 
 ### SQL Injection (Blind)
 
+
+**Security level is currently: low.**
+
+
+
+
 ---
 
 ### Weak Session IDs
