@@ -1001,4 +1001,7 @@ JavaScript is performing following 3 steps to generate token:
 
 	<img width="365" alt="image" src="https://user-images.githubusercontent.com/79740895/185679989-4835924d-d5ee-4cff-8733-dcba97291dfa.png">
 
+<br/>
 
+
+:octocat: Happy Hacking :octocat:
