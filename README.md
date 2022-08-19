@@ -787,6 +787,7 @@ Process finished with exit code 0
 
 </details>
 
+<br/>
 
 ---
 
@@ -794,9 +795,13 @@ Process finished with exit code 0
 
 
 **Security level is currently: low.**
+
 **Security level is currently: medium.**
+
 **Security level is currently: high.**
 
+
+<br/>
 
 ---
 
