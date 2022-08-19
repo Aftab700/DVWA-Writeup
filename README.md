@@ -815,9 +815,21 @@ It's is similar to low level but it is doing md5 hash of that additionally.
 
 
 **Security level is currently: low.**
+
+
+We have option to select language and value is reflected in GET parameter default=English
+
+payload=`<script>alert(document.cookie);</script>`  
+
+using this it will trigger an alert pop up with cookie values.
+
+
 **Security level is currently: medium.**
+
 **Security level is currently: high.**
 
+
+<br/>
 
 ---
 
@@ -825,8 +837,12 @@ It's is similar to low level but it is doing md5 hash of that additionally.
 
 
 **Security level is currently: low.**
+
 **Security level is currently: medium.**
+
 **Security level is currently: high.**
+
+
 
 
 ---
