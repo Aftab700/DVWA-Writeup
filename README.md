@@ -942,7 +942,7 @@ and anything we set to callback's value wil be executed so we can modify it to `
 
 Submit the word "success" to win. 
 
-we have phrase=ChangeMe and we have to change it to success.
+we have phrase=ChangeMe and we have to change it to "success".
 there is token and the value of token is md5(rot13(phrase).
 
 rot13("success")  =  "fhpprff"
@@ -960,6 +960,15 @@ let's submit this:
 
 **Security level is currently: medium.**
 
+The value of token for phrase=ChangeMe is: `token=XXeMegnahCXX`
+
+if we look closely we can see that the value is "XX" + reverse of phrase + "XX"
+
+so new value for "sseccus" will be "XXsseccusXX"
+
+`token=XXsseccusXX&phrase=success`
+
+<img width="333" alt="image" src="https://user-images.githubusercontent.com/79740895/185643241-ae14fb37-4cf9-42bd-a227-c52d2e3e98d1.png">
 
 
 **Security level is currently: high.**
