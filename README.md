@@ -940,8 +940,27 @@ and anything we set to callback's value wil be executed so we can modify it to `
 
 **Security level is currently: low.**
 
+Submit the word "success" to win. 
+
+we have phrase=ChangeMe and we have to change it to success.
+there is token and the value of token is md5(rot13(phrase).
+
+rot13("success")  =  "fhpprff"
+
+md5("fhpprff")  =  "38581812b435834ebf84ebcc2c6424d6"
+
+so value of token and phrase:
+
+`token=38581812b435834ebf84ebcc2c6424d6&phrase=success`
+
+let's submit this:
+
+<img width="296" alt="image" src="https://user-images.githubusercontent.com/79740895/185639989-2de75e85-045f-4805-902b-b3ce417e88d2.png">
+
 
 **Security level is currently: medium.**
+
+
 
 **Security level is currently: high.**
 
