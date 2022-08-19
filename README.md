@@ -833,7 +833,8 @@ payload=`" ></option></select><img src=x onerror="alert(document.cookie)">`
 
 **Security level is currently: high.**
 
-This time server is using whitelist we can bypass that by puting our payload after `#` because anything after `#` is not sent to server but still reflecting on the page.
+This time server is using whitelist we can bypass that by puting our payload after `#` because anything after `#` is not sent to 
+server but still reflecting on the page.
 
 payload=`#<script>alert(document.cookie);</script>`
 
@@ -884,6 +885,12 @@ and it's working it will trigger an alert pop up with cookie value.
 
 **Security level is currently: medium.**
 
+This time we put our paylod in name field we can easily bypass the maximum character limit by changing the maxlength attribute of input from DevTools.
+we change the case of our payload:
+
+payload=`<sCrIpT>alert(document.cookie);</ScRiPt>`
+
+It will successfully trigger alert pop up with cookie value.
 
 
 **Security level is currently: high.**
