@@ -910,7 +910,16 @@ payload=`<ImG src=x onerror="alert(document.cookie)">`
 
 **Security level is currently: low.**
 
+from CSP we can import script from pastebin.com, so let's put our script on pastebin and include that link:
+
+payload=`https://pastebin.com/dl/Lnamji4V`
+
+this JavaScript is executed on page.
+
+
 **Security level is currently: medium.**
+
+
 
 **Security level is currently: high.**
 
