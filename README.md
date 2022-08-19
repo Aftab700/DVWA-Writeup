@@ -875,7 +875,16 @@ payload=`<img src=x onerror="alert(document.cookie)">`
 
 **Security level is currently: low.**
 
+we have name and message field let's put our payload in message:
+
+payload=`<img src=x onerror="alert(document.cookie)">`
+
+and it's working it will trigger an alert pop up with cookie value.
+
+
 **Security level is currently: medium.**
+
+
 
 **Security level is currently: high.**
 
