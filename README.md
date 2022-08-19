@@ -974,3 +974,31 @@ so new value for "sseccus" will be "XXsseccusXX"
 **Security level is currently: high.**
 
 
+JavaScript is performing following 3 steps to generate token:
+
+1. reverse the value of phrase:
+
+	phrase=success
+
+	token=sseccus
+
+2. prepend 'XX' at start and sha256:
+
+	token = 'XX' + token = 'XXsseccus'
+
+	sha256(token) = sha256("XXsseccus") = "7f1bfaaf829f785ba5801d5bf68c1ecaf95ce04545462c8b8f311dfc9014068a"
+
+3. append 'ZZ' and sha256:
+
+	token = token + 'ZZ' = "7f1bfaaf829f785ba5801d5bf68c1ecaf95ce04545462c8b8f311dfc9014068aZZ"
+
+	sha256(token) = sha256("7f1bfaaf829f785ba5801d5bf68c1ecaf95ce04545462c8b8f311dfc9014068aZZ") = 
+"ec7ef8687050b6fe803867ea696734c67b541dfafb286a0b1239f42ac5b0aa84"
+
+	`token=ec7ef8687050b6fe803867ea696734c67b541dfafb286a0b1239f42ac5b0aa84&phrase=success`
+
+	let's submit this:
+
+	<img width="365" alt="image" src="https://user-images.githubusercontent.com/79740895/185679989-4835924d-d5ee-4cff-8733-dcba97291dfa.png">
+
+
