@@ -642,7 +642,7 @@ Python code to brute force version:
 
 <details><summary markdown="span">Click to see code :diamond_shape_with_a_dot_inside: </summary>
   
-```Python
+```python
 import requests
 from requests.structures import CaseInsensitiveDict
 
@@ -694,7 +694,7 @@ Python code to brute force version:
 
 <details><summary markdown="span">Click to see code :diamond_shape_with_a_dot_inside: </summary>
   
-```Python
+```python
 import requests
 from requests.structures import CaseInsensitiveDict
 
@@ -728,7 +728,7 @@ for i in range(1, length+1):
 
 <details><summary markdown="span">Click to see output :diamond_shape_with_a_dot_inside: </summary>
   
-```Shell
+```shell
 length = 24
 10.1.26-MariaDB-0+deb9u1
 Process finished with exit code 0
@@ -747,7 +747,7 @@ Python code to brute force version:
 
 <details><summary markdown="span">Click to see code :diamond_shape_with_a_dot_inside: </summary>
   
-```Python
+```python
 
 ```
 
@@ -756,7 +756,7 @@ Python code to brute force version:
 
 <details><summary markdown="span">Click to see output :diamond_shape_with_a_dot_inside: </summary>
   
-```Shell
+```shell
 length = 24
 10.1.26-MariaDB-0+deb9u1
 Process finished with exit code 0
