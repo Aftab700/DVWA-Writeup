@@ -3,6 +3,7 @@ plugins:
   - jemoji
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-remote-theme
 markdown: kramdown
 kramdown:
   parse_block_html: true
