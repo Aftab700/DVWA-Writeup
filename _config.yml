@@ -1,4 +1,6 @@
 theme: jekyll-theme-cayman
+canonical_url: "https://www.aftabsama.com"
+url: "https://www.aftabsama.com"
 plugins:
   - jemoji
   - jekyll-feed
