@@ -11,5 +11,5 @@ kramdown:
   parse_block_html: true
 title: "DVWA Writeups"
 description: "This repository contains writeups for Damn Vulnerable Web Application (DVWA)."
-google_analytics: G-T8K5YV4W6E
+# google_analytics: G-T8K5YV4W6E
 
