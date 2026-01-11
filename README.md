@@ -1010,8 +1010,4 @@ JavaScript is performing following 3 steps to generate token:
 <br>
 
 -----
-<!-- GitAds-Verify: ZYJMNKM8DAO66GQEDPTP29ZRZTDSKR9J -->
-
-## GitAds Sponsored
-[![Sponsored by GitAds](https://gitads.dev/v1/ad-serve?source=aftab700/dvwa-writeup@github)](https://gitads.dev/v1/ad-track?source=aftab700/dvwa-writeup@github)
 
